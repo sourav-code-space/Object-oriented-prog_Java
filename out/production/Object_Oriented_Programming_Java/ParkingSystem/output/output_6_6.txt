@@ -1,0 +1,73 @@
+**DAY 1**
+As the day begins, vehicles park in the lot...
+Officer begins patrolling JLot
+Officer visits Parking Spot[number=0, permit=RESERVED, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000004, tickets=[]]
+	a ticket is issued: Ticket[type=RESERVED, day=1, plate=1000004, fine=50.0]
+Officer visits Parking Spot[number=1, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000002, tickets=[]]
+	the vehicle is legally parked.
+Officer visits Parking Spot[number=2, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000000, tickets=[]]
+Officer visits Parking Spot[number=3, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000001, tickets=[]]
+	the vehicle is legally parked.
+Officer visits Parking Spot[number=4, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000005, tickets=[]]
+	the vehicle is unregistered.
+	a ticket is issued: Ticket[type=NO_PERMIT, day=1, plate=1000005, fine=100.0]
+As the day ends, vehicles vacate the lot...
+1000004 was ticketed: [Ticket[type=RESERVED, day=1, plate=1000004, fine=50] ]
+1000005 was ticketed: [Ticket[type=NO_PERMIT, day=1, plate=1000005, fine=100] ]
+
+**DAY 2**
+As the day begins, vehicles park in the lot...
+Officer begins patrolling JLot
+Officer visits Parking Spot[number=0, permit=RESERVED, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000004, tickets=[]]
+	a ticket is issued: Ticket[type=RESERVED, day=2, plate=1000004, fine=50.0]
+Officer visits Parking Spot[number=1, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000001, tickets=[]]
+	the vehicle is legally parked.
+Officer visits Parking Spot[number=2, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000002, tickets=[]]
+	the vehicle is legally parked.
+Officer visits Parking Spot[number=3, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000000, tickets=[]]
+Officer visits Parking Spot[number=4, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000003, tickets=[]]
+	the vehicle is legally parked.
+As the day ends, vehicles vacate the lot...
+1000004 was ticketed: [Ticket[type=RESERVED, day=2, plate=1000004, fine=50] ]
+
+**DAY 3**
+As the day begins, vehicles park in the lot...
+Officer begins patrolling JLot
+Officer visits Parking Spot[number=0, permit=RESERVED, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000002, tickets=[]]
+	a ticket is issued: Ticket[type=RESERVED, day=3, plate=1000002, fine=50.0]
+Officer visits Parking Spot[number=1, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000005, tickets=[]]
+	the vehicle is unregistered.
+	a ticket is issued: Ticket[type=NO_PERMIT, day=3, plate=1000005, fine=100.0]
+Officer visits Parking Spot[number=2, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000004, tickets=[]]
+	the vehicle is legally parked.
+Officer visits Parking Spot[number=3, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000003, tickets=[]]
+	the vehicle is legally parked.
+Officer visits Parking Spot[number=4, permit=GENERAL, occupied=true]
+	a vehicle is in the spot: Vehicle[plate=1000000, tickets=[]]
+As the day ends, vehicles vacate the lot...
+1000002 was ticketed: [Ticket[type=RESERVED, day=3, plate=1000002, fine=50] ]
+1000005 was ticketed: [Ticket[type=NO_PERMIT, day=3, plate=1000005, fine=100] ]
+
+
+********FINAL REPORT********
+
+1000000:(no ticket)
+1000001:(no ticket)
+1000002:Ticket[type=RESERVED, day=3, plate=1000002, fine=50]
+1000003:(no ticket)
+1000004:Ticket[type=RESERVED, day=1, plate=1000004, fine=50] Ticket[type=RESERVED, day=2, plate=1000004, fine=50]
+1000005:Ticket[type=NO_PERMIT, day=1, plate=1000005, fine=100] Ticket[type=NO_PERMIT, day=3, plate=1000005, fine=100]
